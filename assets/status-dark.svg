@@ -8,6 +8,16 @@
       --accent: #9B8AFB;
       --accent-dim: #9B8AFB66;
     }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --pill-fill: #FFFFFF;
+        --pill-stroke: #E4E2EA;
+        --label-color: #726F80;
+        --value-color: #17161C;
+        --accent: #7C6AE8;
+        --accent-dim: #7C6AE866;
+      }
+    }
     .glow { animation: breathe 4s ease-in-out infinite; }
     @keyframes breathe {
       0%, 100% { opacity: 0.10; }

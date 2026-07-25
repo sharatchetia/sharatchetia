@@ -1,5 +1,4 @@
-<img src="assets/status-dark.svg#gh-dark-mode-only" align="left" width="380" alt="Currently building">
-<img src="assets/status-light.svg#gh-light-mode-only" align="left" width="380" alt="Currently building">
+<img src="assets/status.svg" align="left" width="380" alt="Currently building">
 
 ### SHARAT CHANDRA CHETIA
 Computer Science Student

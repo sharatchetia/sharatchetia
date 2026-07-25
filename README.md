@@ -1,14 +1,14 @@
-<table width="100%" style="width: 100%;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
 <tr>
-<td width="300" valign="top">
+<td width="310" valign="top" style="min-width: 310px; width: 310px; border: none; padding-right: 15px;">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img src="assets/status.svg" alt="Currently building" width="280">
+  <img src="assets/status.svg" alt="Currently building" width="300">
 </picture>
 
 </td>
-<td valign="top" width="100%" style="width: 100%;">
+<td valign="top" style="border: none;">
 
 ### SHARAT CHANDRA CHETIA
 Computer Science Student

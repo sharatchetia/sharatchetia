@@ -8,35 +8,38 @@
 </picture>
 
 </td>
-<td valign="top">
+<td valign="middle">
 
-# Sharat Chetia
+### Sharat Chetia
 Computer Science Student
-<br><br>
 
-<sub>BUILDING WITH</sub>
-<br>
-<img src="https://cdn.simpleicons.org/python/928FA0/8B8996" width="22" height="22" alt="Python" title="Python">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/java/928FA0/8B8996" width="22" height="22" alt="Java" title="Java">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/javascript/928FA0/8B8996" width="22" height="22" alt="JavaScript" title="JavaScript">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/react/928FA0/8B8996" width="22" height="22" alt="React" title="React">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/fastapi/928FA0/8B8996" width="22" height="22" alt="FastAPI" title="FastAPI">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/pytorch/928FA0/8B8996" width="22" height="22" alt="PyTorch" title="PyTorch">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/opencv/928FA0/8B8996" width="22" height="22" alt="OpenCV" title="OpenCV">
-
-<br><br>
-
-<sub>CURRENTLY LEARNING</sub>
-<br>
-Machine Learning · Computer Vision · Data Structures & Algorithms
-
-<br><br>
-
-<sub>WORKING ON</sub>
-<br>
-→ <a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a>
-<br>
-→ <a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
+<table>
+<tr>
+<td width="140" valign="top"><sub>BUILDING WITH</sub></td>
+<td valign="top">
+<img src="https://cdn.simpleicons.org/python" width="22" height="22" alt="Python" title="Python">&nbsp;
+<img src="https://cdn.simpleicons.org/openjdk" width="22" height="22" alt="Java" title="Java">&nbsp;
+<img src="https://cdn.simpleicons.org/javascript" width="22" height="22" alt="JavaScript" title="JavaScript">&nbsp;
+<img src="https://cdn.simpleicons.org/react" width="22" height="22" alt="React" title="React">&nbsp;
+<img src="https://cdn.simpleicons.org/fastapi" width="22" height="22" alt="FastAPI" title="FastAPI">&nbsp;
+<img src="https://cdn.simpleicons.org/pytorch" width="22" height="22" alt="PyTorch" title="PyTorch">&nbsp;
+<img src="https://cdn.simpleicons.org/opencv" width="22" height="22" alt="OpenCV" title="OpenCV">
+</td>
+</tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr>
+<td valign="top"><sub>CURRENTLY LEARNING</sub></td>
+<td valign="top">Machine Learning · Computer Vision · Data Structures & Algorithms</td>
+</tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr>
+<td valign="top"><sub>WORKING ON</sub></td>
+<td valign="top">
+<a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a><br>
+<a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
+</td>
+</tr>
+</table>
 
 </td>
 </tr>

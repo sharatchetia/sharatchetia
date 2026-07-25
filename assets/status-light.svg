@@ -1,0 +1,64 @@
+<svg width="300" height="88" viewBox="0 0 300 88" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+      --pill-fill: #F6F5FA;
+      --pill-stroke: #E5E3EE;
+      --label-color: #928FA0;
+      --value-color: #1B1B1F;
+      --accent: #6E56CF;
+      --accent-dim: #6E56CF66;
+    }
+    .float { animation: float 5s ease-in-out infinite; transform-origin: 150px 44px; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    .glow { animation: breathe 4s ease-in-out infinite; }
+    @keyframes breathe {
+      0%, 100% { opacity: 0.10; }
+      50% { opacity: 0.22; }
+    }
+    .icon-group { transform-origin: 47px 44px; animation: spin 9s linear infinite; }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .value { opacity: 0; animation: cycle 18s infinite; }
+    @keyframes cycle {
+      0%   { opacity: 0; }
+      3%   { opacity: 1; }
+      13%  { opacity: 1; }
+      17%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .v1 { animation-delay: 0s; }
+    .v2 { animation-delay: 3s; }
+    .v3 { animation-delay: 6s; }
+    .v4 { animation-delay: 9s; }
+    .v5 { animation-delay: 12s; }
+    .v6 { animation-delay: 15s; }
+  </style>
+
+  <ellipse class="glow" cx="150" cy="44" rx="130" ry="26" fill="var(--accent)"/>
+
+  <g class="float">
+    <rect x="14" y="16" width="272" height="56" rx="28" fill="var(--pill-fill)" stroke="var(--pill-stroke)"/>
+
+    <g class="icon-group">
+      <rect x="41" y="38" width="6" height="6" rx="1.5" fill="var(--accent)" opacity="1"/>
+      <rect x="50" y="38" width="6" height="6" rx="1.5" fill="var(--accent)" opacity="0.65"/>
+      <rect x="41" y="47" width="6" height="6" rx="1.5" fill="var(--accent)" opacity="0.4"/>
+      <rect x="50" y="47" width="6" height="6" rx="1.5" fill="var(--accent)" opacity="0.8"/>
+    </g>
+
+    <text x="76" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="600" letter-spacing="1.6" fill="var(--label-color)">CURRENTLY</text>
+
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="var(--value-color)">
+      <text class="value v1" x="76" y="54">Building NyaySetu</text>
+      <text class="value v2" x="76" y="54">Learning DSA</text>
+      <text class="value v3" x="76" y="54">Working on Computer Vision</text>
+      <text class="value v4" x="76" y="54">Exploring Machine Learning</text>
+      <text class="value v5" x="76" y="54">Building software projects</text>
+      <text class="value v6" x="76" y="54">Always learning</text>
+    </g>
+  </g>
+</svg>

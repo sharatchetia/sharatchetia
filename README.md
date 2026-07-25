@@ -1,29 +1,23 @@
 <table>
-  <tr>
-    <td width="360" valign="middle">
-      STATUS WIDGET GOES HERE
-    </td>
+<tr>
+<td width="300" valign="middle">
 
-    <td valign="middle">
-      <h1>Sharat Chetia</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
+  <img src="assets/status-light.svg" alt="Currently building" width="280">
+</picture>
 
-      <p><strong>Computer Science Student</strong></p>
+</td>
+<td valign="middle">
 
-      <p>
-        Interested in Artificial Intelligence, Machine Learning and Software Development.
-      </p>
+# Sharat Chetia
 
-      <p>
-        Building thoughtful software while learning deeply.
-      </p>
+Computer Science student
 
-      <p>
-        <a href="https://github.com/sharatchetia">GitHub</a>
-        &nbsp;•&nbsp;
-        <a href="https://linkedin.com/in/sharatchetia">LinkedIn</a>
-        &nbsp;•&nbsp;
-        <a href="mailto:contact@sharatchetia.com">Email</a>
-      </p>
-    </td>
-  </tr>
+Interested in Artificial Intelligence, Machine Learning, and Software Development. Learning by building practical projects.
+
+[GitHub](https://github.com/sharatchetia) · [LinkedIn](https://www.linkedin.com/in/sharat-chandra-chetia-413b8a344/) · [Email](mailto:sharatchetia80@gmail.com)
+
+</td>
+</tr>
 </table>

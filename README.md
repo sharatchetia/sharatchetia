@@ -9,15 +9,15 @@ Computer Science Student
 
 #### BUILDING WITH
 <br>
-<img src="https://cdn.simpleicons.org/python" width="28" height="28" alt="Python" title="Python">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/openjdk" width="28" height="28" alt="Java" title="Java">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/javascript" width="28" height="28" alt="JavaScript" title="JavaScript">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/react" width="28" height="28" alt="React" title="React">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/fastapi" width="28" height="28" alt="FastAPI" title="FastAPI">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/pytorch" width="28" height="28" alt="PyTorch" title="PyTorch">&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/opencv" width="28" height="28" alt="OpenCV" title="OpenCV">
+<img src="https://cdn.simpleicons.org/python" width="24" height="24" alt="Python" title="Python">&nbsp;
+<img src="https://cdn.simpleicons.org/openjdk" width="24" height="24" alt="Java" title="Java">&nbsp;
+<img src="https://cdn.simpleicons.org/javascript" width="24" height="24" alt="JavaScript" title="JavaScript">&nbsp;
+<img src="https://cdn.simpleicons.org/react" width="24" height="24" alt="React" title="React">&nbsp;
+<img src="https://cdn.simpleicons.org/fastapi" width="24" height="24" alt="FastAPI" title="FastAPI">&nbsp;
+<img src="https://cdn.simpleicons.org/pytorch" width="24" height="24" alt="PyTorch" title="PyTorch">&nbsp;
+<img src="https://cdn.simpleicons.org/opencv" width="24" height="24" alt="OpenCV" title="OpenCV">
 
-<br><br>
+<br>
 
 #### CURRENTLY LEARNING
 <br>
@@ -27,7 +27,7 @@ Computer Science Student
 <br>
 · Data Structures & Algorithms
 
-<br><br>
+<br>
 
 #### WORKING ON
 <br>

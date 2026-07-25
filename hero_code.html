@@ -1,4 +1,4 @@
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<table width="100%" style="width: 100%;">
 <tr>
 <td width="300" valign="top">
 
@@ -8,7 +8,7 @@
 </picture>
 
 </td>
-<td valign="top">
+<td valign="top" width="100%" style="width: 100%;">
 
 ### SHARAT CHANDRA CHETIA
 Computer Science Student

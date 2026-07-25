@@ -8,15 +8,35 @@
 </picture>
 
 </td>
-<td valign="middle">
+<td valign="top">
 
 # Sharat Chetia
+Computer Science Student
+<br><br>
 
-Computer Science student
+<sub>BUILDING WITH</sub>
+<br>
+<img src="https://cdn.simpleicons.org/python/928FA0/8B8996" width="22" height="22" alt="Python" title="Python">&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/java/928FA0/8B8996" width="22" height="22" alt="Java" title="Java">&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/javascript/928FA0/8B8996" width="22" height="22" alt="JavaScript" title="JavaScript">&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/react/928FA0/8B8996" width="22" height="22" alt="React" title="React">&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/fastapi/928FA0/8B8996" width="22" height="22" alt="FastAPI" title="FastAPI">&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/pytorch/928FA0/8B8996" width="22" height="22" alt="PyTorch" title="PyTorch">&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/opencv/928FA0/8B8996" width="22" height="22" alt="OpenCV" title="OpenCV">
 
-Interested in Artificial Intelligence, Machine Learning, and Software Development. Learning by building practical projects.
+<br><br>
 
-[GitHub](https://github.com/sharatchetia) · [LinkedIn](https://www.linkedin.com/in/sharat-chandra-chetia-413b8a344/) · [Email](mailto:sharatchetia80@gmail.com)
+<sub>CURRENTLY LEARNING</sub>
+<br>
+Machine Learning · Computer Vision · Data Structures & Algorithms
+
+<br><br>
+
+<sub>WORKING ON</sub>
+<br>
+→ <a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a>
+<br>
+→ <a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
 
 </td>
 </tr>

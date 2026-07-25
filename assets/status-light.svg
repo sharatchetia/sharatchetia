@@ -1,12 +1,12 @@
 <svg width="300" height="88" viewBox="0 0 300 88" xmlns="http://www.w3.org/2000/svg">
   <style>
     :root {
-      --pill-fill: #F6F5FA;
-      --pill-stroke: #E5E3EE;
-      --label-color: #928FA0;
-      --value-color: #1B1B1F;
-      --accent: #6E56CF;
-      --accent-dim: #6E56CF66;
+      --pill-fill: #17161C;
+      --pill-stroke: #2B2A33;
+      --label-color: #8B8996;
+      --value-color: #F1F0F4;
+      --accent: #9B8AFB;
+      --accent-dim: #9B8AFB66;
     }
     .glow { animation: breathe 4s ease-in-out infinite; }
     @keyframes breathe {

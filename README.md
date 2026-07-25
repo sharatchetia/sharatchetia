@@ -15,16 +15,16 @@ Computer Science Student
 <img src="https://cdn.simpleicons.org/opencv" width="24" height="24" alt="OpenCV" title="OpenCV">
 
 #### CURRENTLY LEARNING
-· Machine Learning
+<b>•</b> Machine Learning
 <br>
-· Computer Vision
+<b>•</b> Computer Vision
 <br>
-· Data Structures & Algorithms
+<b>•</b> Data Structures & Algorithms
 
 #### WORKING ON
-· <a href="https://github.com/sharatchetia/nyaysetu"><img src="assets/badge-nyaysetu-v2.svg?v=9" alt="NyaySetu" height="26" align="absmiddle"></a>
+<b>•</b> <a href="https://github.com/sharatchetia/nyaysetu"><img src="assets/badge-nyaysetu-v2.svg?v=10" alt="NyaySetu" height="26" align="absmiddle"></a>
 <br>
-· <a href="https://github.com/sharatchetia/sign-language-translator"><img src="assets/badge-signlang-v2.svg?v=9" alt="Real-Time Sign Language Translator" height="26" align="absmiddle"></a>
+<b>•</b> <a href="https://github.com/sharatchetia/sign-language-translator"><img src="assets/badge-signlang-v2.svg?v=10" alt="Real-Time Sign Language Translator" height="26" align="absmiddle"></a>
 
 </td>
 <td valign="middle" align="center" width="50%">

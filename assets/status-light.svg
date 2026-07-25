@@ -8,11 +8,6 @@
       --accent: #6E56CF;
       --accent-dim: #6E56CF66;
     }
-    .float { animation: float 5s ease-in-out infinite; transform-origin: 150px 44px; }
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-3px); }
-    }
     .glow { animation: breathe 4s ease-in-out infinite; }
     @keyframes breathe {
       0%, 100% { opacity: 0.10; }
@@ -40,7 +35,7 @@
 
   <ellipse class="glow" cx="150" cy="44" rx="130" ry="26" fill="var(--accent)"/>
 
-  <g class="float">
+  <g>
     <rect x="14" y="16" width="272" height="56" rx="28" fill="var(--pill-fill)" stroke="var(--pill-stroke)"/>
 
     <g class="icon-group">

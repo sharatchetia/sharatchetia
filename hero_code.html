@@ -1,22 +1,11 @@
-<table>
-<tr>
-<td width="300" valign="middle">
+<img src="assets/status-dark.svg#gh-dark-mode-only" align="left" width="380" alt="Currently building">
+<img src="assets/status-light.svg#gh-light-mode-only" align="left" width="380" alt="Currently building">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img src="assets/status-light.svg" alt="Currently building" width="280">
-</picture>
-
-</td>
-<td valign="middle">
-
-### Sharat Chetia
+### SHARAT CHANDRA CHETIA
 Computer Science Student
 
-<table>
-<tr>
-<td width="140" valign="top"><sub>BUILDING WITH</sub></td>
-<td valign="top">
+<sub>BUILDING WITH</sub>
+<br>
 <img src="https://cdn.simpleicons.org/python" width="22" height="22" alt="Python" title="Python">&nbsp;
 <img src="https://cdn.simpleicons.org/openjdk" width="22" height="22" alt="Java" title="Java">&nbsp;
 <img src="https://cdn.simpleicons.org/javascript" width="22" height="22" alt="JavaScript" title="JavaScript">&nbsp;
@@ -24,23 +13,23 @@ Computer Science Student
 <img src="https://cdn.simpleicons.org/fastapi" width="22" height="22" alt="FastAPI" title="FastAPI">&nbsp;
 <img src="https://cdn.simpleicons.org/pytorch" width="22" height="22" alt="PyTorch" title="PyTorch">&nbsp;
 <img src="https://cdn.simpleicons.org/opencv" width="22" height="22" alt="OpenCV" title="OpenCV">
-</td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-<tr>
-<td valign="top"><sub>CURRENTLY LEARNING</sub></td>
-<td valign="top">Machine Learning · Computer Vision · Data Structures & Algorithms</td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
-<tr>
-<td valign="top"><sub>WORKING ON</sub></td>
-<td valign="top">
-<a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a><br>
-<a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
-</td>
-</tr>
-</table>
 
-</td>
-</tr>
-</table>
+<br><br>
+
+<sub>CURRENTLY LEARNING</sub>
+<br>
+· Machine Learning
+<br>
+· Computer Vision
+<br>
+· Data Structures & Algorithms
+
+<br><br>
+
+<sub>WORKING ON</sub>
+<br>
+<a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a>
+<br>
+<a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
+
+<br clear="both">

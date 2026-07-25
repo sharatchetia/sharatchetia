@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currently Building • Live Status Widget</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap');
+        
+        /* 
+         * Base layout styles.
+         * Minimal, elegant canvas inspired by Linear, Raycast, and Apple UI components.
+         */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #f8f7f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            overflow: hidden;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* 
+         * Compact status pill container.
+         */
+        .status-pill {
+            width: min(350px, 92vw);
+            background: #111113;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 9999px;
+            padding: 12px 18px;
+            color: #ffffff;
+            box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.04);
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            will-change: transform;
+        }
+        
+        /* 
+         * CHANGED: Increased grid column gap from 11px to 16px
+         * to shift both the header and status text rightwards, creating clear breathing room from the loader icon.
+         */
+        .content {
+            display: grid;
+            grid-template-columns: 20px 1fr;
+            grid-template-rows: auto auto;
+            gap: 2px 16px;
+            align-items: center;
+        }
+        
+        .icon-container {
+            grid-row: 1 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .header-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Status dot beside "CURRENTLY" */
+        .status-dot {
+            width: 5.5px;
+            height: 5.5px;
+            border-radius: 50%;
+            background-color: #60a5fa;
+            box-shadow: 0 0 4px rgba(96, 165, 250, 0.5);
+            transition: background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            flex-shrink: 0;
+        }
+
+        /* Constant Header label */
+        .header {
+            font-size: 10.5px;
+            opacity: 0.5;
+            white-space: nowrap;
+            font-weight: 500;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .loader-wrapper {
+            width: 20px;
+            height: 20px;
+            animation: breathe 3.6s ease-in-out infinite;
+        }
+        
+        .loader-pulse {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .loader-group {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2.5px;
+            transform-origin: center;
+            will-change: transform;
+        }
+        
+        .mini-square {
+            background: currentColor;
+            border-radius: 2.5px;
+            box-shadow: 0 0 3px currentColor;
+            transition: filter 0.8s ease;
+        }
+        
+        @keyframes breathe {
+            0%, 100% { transform: scale(0.96); }
+            50% { transform: scale(1.04); }
+        }
+        
+        /* Status text typography */
+        .status-text {
+            font-size: 14.5px;
+            font-weight: 550;
+            letter-spacing: -0.025em;
+            color: #f3f4f6;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .status-text-inner {
+            display: inline-block;
+            transform-origin: left center;
+            will-change: transform, opacity;
+            animation: statusBreathe 3.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+            animation-delay: 1200ms;
+        }
+        
+        @keyframes statusBreathe {
+            0%, 100% { opacity: 0.90; transform: scale(0.996) translateY(0.3px); }
+            50% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        
+        .status-text-container {
+            overflow: hidden;
+        }
+
+        /* Responsive scaling for narrow viewports */
+        @media (max-width: 360px) {
+            .status-pill {
+                padding: 10px 14px;
+            }
+            .content {
+                gap: 1px 12px;
+            }
+            .header {
+                font-size: 10px;
+                letter-spacing: 1.1px;
+            }
+            .status-text {
+                font-size: 13.5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Compact status widget container -->
+    <div class="status-pill" id="statusPill">
+        <div class="content">
+            <div class="icon-container">
+                <div class="loader-wrapper" id="loaderWrapper">
+                    <div class="loader-pulse" id="loaderPulse">
+                        <!-- Muted blue accent (#60a5fa) -->
+                        <div class="loader-group" id="loaderGroup" style="color: #60a5fa;">
+                            <div class="mini-square" id="sq1"></div>
+                            <div class="mini-square" id="sq2"></div>
+                            <div class="mini-square" id="sq3"></div>
+                            <div class="mini-square" id="sq4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Static header label with live status dot -->
+            <div class="header-row">
+                <span class="status-dot" id="statusDot" style="background-color: #60a5fa; box-shadow: 0 0 4px rgba(96, 165, 250, 0.5);"></span>
+                <span class="header">CURRENTLY</span>
+            </div>
+            
+            <!-- Animated status line -->
+            <div class="status-text-container">
+                <div class="status-text" id="statusText"><span class="status-text-inner" id="statusTextInner">Building NyaySetu</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const statusText = document.getElementById('statusText');
+        const statusTextInner = document.getElementById('statusTextInner');
+        const loaderGroup = document.getElementById('loaderGroup');
+        const loaderPulse = document.getElementById('loaderPulse');
+        const statusPill = document.getElementById('statusPill');
+        const statusDot = document.getElementById('statusDot');
+        const squares = [
+            document.getElementById('sq1'),
+            document.getElementById('sq2'),
+            document.getElementById('sq3'),
+            document.getElementById('sq4')
+        ];
+
+        /*
+         * Status list:
+         * Restrained palette: muted blue (#60a5fa), muted green (#34d399), muted gray (#94a3b8).
+         * 3000ms duration per status.
+         */
+        const phases = [
+            { time: 0,     status: "Building NyaySetu",            color: "#60a5fa" }, // muted blue
+            { time: 3000,  status: "Learning DSA",                 color: "#34d399" }, // muted green
+            { time: 6000,  status: "Working on Computer Vision",   color: "#94a3b8" }, // muted gray
+            { time: 9000,  status: "Exploring Machine Learning",   color: "#60a5fa" }, // muted blue
+            { time: 12000, status: "Building Software Projects",   color: "#34d399" }, // muted green
+            { time: 15000, status: "Always Learning",              color: "#94a3b8" }  // muted gray
+        ];
+
+        /*
+         * Smooth text transition with cubic-bezier(0.16, 1, 0.3, 1).
+         */
+        function transitionText(el, newText, textEl) {
+            const target = textEl || el;
+            el.style.transition = 'all 280ms cubic-bezier(0.4, 0.0, 0.2, 1)';
+            el.style.transform = 'translateY(3px)';
+            el.style.opacity = '0.35';
+            
+            setTimeout(() => {
+                target.textContent = newText;
+                el.style.transition = 'all 280ms cubic-bezier(0.16, 1, 0.3, 1)';
+                el.style.transform = 'translateY(0)';
+                el.style.opacity = '1';
+            }, 120);
+        }
+
+        function updateColor(color) {
+            loaderGroup.style.transition = 'color 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+            loaderGroup.style.color = color;
+        }
+
+        function updateDot(color) {
+            statusDot.style.backgroundColor = color;
+            statusDot.style.boxShadow = `0 0 4px ${color}80`;
+        }
+
+        function pulseLoader() {
+            loaderPulse.style.transition = 'transform 280ms cubic-bezier(0.4, 0.0, 0.2, 1)';
+            loaderPulse.style.transform = 'scale(0.97)';
+            setTimeout(() => {
+                loaderPulse.style.transform = 'scale(1)';
+            }, 40);
+        }
+
+        function updatePhase(phase) {
+            transitionText(statusText, phase.status, statusTextInner);
+            updateColor(phase.color);
+            updateDot(phase.color);
+            pulseLoader();
+        }
+
+        /*
+         * Smooth, calm loader icon rotation (240 deg/s).
+         */
+        (function animateRotation() {
+            const BASE_SPEED = 240;   // deg/s average speed
+            const AMPLITUDE = 0.20;   // +/-20% speed variation
+            const PERIOD = 2600;      // ms cycle
+            let angle = 0;
+            let last = performance.now();
+
+            function frame(now) {
+                const dt = (now - last) / 1000;
+                last = now;
+                const phase = (now % PERIOD) / PERIOD * Math.PI * 2;
+                const speed = BASE_SPEED * (1 + AMPLITUDE * Math.sin(phase));
+                angle = (angle + speed * dt) % 360;
+                loaderGroup.style.transform = `rotate(${angle}deg)`;
+                requestAnimationFrame(frame);
+            }
+            requestAnimationFrame(frame);
+        })();
+
+        // Gentle energy circulation
+        function animateEnergy() {
+            let i = 0;
+            setInterval(() => {
+                squares.forEach((sq, idx) => {
+                    const dist = (idx - i + 4) % 4;
+                    const brightness = dist === 0 ? 1.25 : (dist === 1 || dist === 3 ? 1.06 : 1.0);
+                    sq.style.filter = `brightness(${brightness})`;
+                });
+                i = (i + 1) % 4;
+            }, 1000);
+        }
+
+        /*
+         * Subtle floating loop (0.8px float height).
+         */
+        let bounceStartTime = null;
+        const BOUNCE_DURATION = 450;
+
+        function triggerBounce() {
+            bounceStartTime = performance.now();
+        }
+
+        function floatAndBounceLoop(now) {
+            const y = Math.sin(now / 5200) * 0.8;
+
+            let scale = 1;
+            if (bounceStartTime !== null) {
+                const elapsed = now - bounceStartTime;
+                if (elapsed < BOUNCE_DURATION) {
+                    scale = 1 + 0.005 * Math.sin((elapsed / BOUNCE_DURATION) * Math.PI);
+                } else {
+                    bounceStartTime = null;
+                }
+            }
+
+            statusPill.style.transform = `translateY(${y}px) scale(${scale})`;
+            requestAnimationFrame(floatAndBounceLoop);
+        }
+        requestAnimationFrame(floatAndBounceLoop);
+
+        // Run status update loop
+        function runCycle() {
+            phases.forEach((phase, index) => {
+                const delay = phase.time + (index > 0 ? 80 : 0);
+                setTimeout(() => updatePhase(phase), delay);
+            });
+
+            setTimeout(triggerBounce, 16800);
+        }
+
+        const CYCLE_LENGTH = 18000;
+
+        runCycle();
+        setInterval(runCycle, CYCLE_LENGTH);
+
+        window.onload = () => {
+            animateEnergy();
+        };
+    </script>
+</body>
+</html>

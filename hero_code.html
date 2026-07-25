@@ -1,7 +1,6 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img align="left" src="assets/status.svg" alt="Currently building" width="300">
-</picture>
+<table>
+<tr>
+<td valign="top" width="50%">
 
 ### SHARAT CHANDRA CHETIA
 Computer Science Student
@@ -34,4 +33,14 @@ Computer Science Student
 <br>
 → <a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
 
-<br clear="left">
+</td>
+<td valign="top" width="50%" align="right">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
+  <img src="assets/status.svg" alt="Currently building" width="480">
+</picture>
+
+</td>
+</tr>
+</table>

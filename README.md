@@ -1,9 +1,11 @@
 <table>
 <tr>
-<td valign="top" width="50%">
+<td valign="middle" width="50%">
 
 ### SHARAT CHANDRA CHETIA
 Computer Science Student
+
+<br>
 
 <sub>BUILDING WITH</sub>
 <br>
@@ -15,7 +17,7 @@ Computer Science Student
 <img src="https://cdn.simpleicons.org/pytorch" width="22" height="22" alt="PyTorch" title="PyTorch">&nbsp;
 <img src="https://cdn.simpleicons.org/opencv" width="22" height="22" alt="OpenCV" title="OpenCV">
 
-<br><br>
+<br>
 
 <sub>CURRENTLY LEARNING</sub>
 <br>
@@ -25,7 +27,7 @@ Computer Science Student
 <br>
 · Data Structures & Algorithms
 
-<br><br>
+<br>
 
 <sub>WORKING ON</sub>
 <br>
@@ -34,11 +36,11 @@ Computer Science Student
 → <a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
 
 </td>
-<td valign="top" width="50%" align="right">
+<td valign="middle" align="center" width="50%">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img src="assets/status.svg" alt="Currently building" width="480">
+  <img src="assets/status.svg" alt="Currently building" width="620">
 </picture>
 
 </td>

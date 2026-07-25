@@ -1,4 +1,14 @@
-<img src="assets/status.svg" align="left" width="380" alt="Currently building">
+<table>
+<tr>
+<td width="300" valign="top">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
+  <img src="assets/status.svg" alt="Currently building" width="280">
+</picture>
+
+</td>
+<td valign="top">
 
 ### SHARAT CHANDRA CHETIA
 Computer Science Student
@@ -27,8 +37,10 @@ Computer Science Student
 
 <sub>WORKING ON</sub>
 <br>
-<a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a>
+→ <a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a>
 <br>
-<a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
+→ <a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
 
-<br clear="both">
+</td>
+</tr>
+</table>

@@ -30,8 +30,8 @@ Computer Science Student
 <td valign="middle" align="center" width="50%">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg?v=3">
-  <img src="assets/status.svg?v=3" alt="Currently building" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark-v2.svg">
+  <img src="assets/status-v2.svg" alt="Currently building" width="100%">
 </picture>
 
 </td>

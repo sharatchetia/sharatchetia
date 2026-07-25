@@ -31,7 +31,7 @@ Computer Science Student
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img src="assets/status.svg" alt="Currently building" width="600">
+  <img src="assets/status.svg" alt="Currently building" width="100%">
 </picture>
 
 </td>

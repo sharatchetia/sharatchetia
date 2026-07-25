@@ -22,16 +22,16 @@ Computer Science Student
 · Data Structures & Algorithms
 
 #### WORKING ON
-→ <a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a>
+→ <a href="https://github.com/sharatchetia/nyaysetu"><img src="assets/badge-nyaysetu.svg" alt="NyaySetu" height="26"></a>
 <br>
-→ <a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
+→ <a href="https://github.com/sharatchetia/sign-language-translator"><img src="assets/badge-signlang.svg" alt="Real-Time Sign Language Translator" height="26"></a>
 
 </td>
 <td valign="middle" align="center" width="50%">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img src="assets/status.svg" alt="Currently building" width="480">
+  <img src="assets/status.svg" alt="Currently building" width="600">
 </picture>
 
 </td>

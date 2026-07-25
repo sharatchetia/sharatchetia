@@ -7,19 +7,19 @@ Computer Science Student
 
 <br>
 
-<sub>BUILDING WITH</sub>
+#### BUILDING WITH
 <br>
-<img src="https://cdn.simpleicons.org/python" width="22" height="22" alt="Python" title="Python">&nbsp;
-<img src="https://cdn.simpleicons.org/openjdk" width="22" height="22" alt="Java" title="Java">&nbsp;
-<img src="https://cdn.simpleicons.org/javascript" width="22" height="22" alt="JavaScript" title="JavaScript">&nbsp;
-<img src="https://cdn.simpleicons.org/react" width="22" height="22" alt="React" title="React">&nbsp;
-<img src="https://cdn.simpleicons.org/fastapi" width="22" height="22" alt="FastAPI" title="FastAPI">&nbsp;
-<img src="https://cdn.simpleicons.org/pytorch" width="22" height="22" alt="PyTorch" title="PyTorch">&nbsp;
-<img src="https://cdn.simpleicons.org/opencv" width="22" height="22" alt="OpenCV" title="OpenCV">
+<img src="https://cdn.simpleicons.org/python" width="30" height="30" alt="Python" title="Python">&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/openjdk" width="30" height="30" alt="Java" title="Java">&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/javascript" width="30" height="30" alt="JavaScript" title="JavaScript">&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/react" width="30" height="30" alt="React" title="React">&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/fastapi" width="30" height="30" alt="FastAPI" title="FastAPI">&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/pytorch" width="30" height="30" alt="PyTorch" title="PyTorch">&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/opencv" width="30" height="30" alt="OpenCV" title="OpenCV">
 
 <br>
 
-<sub>CURRENTLY LEARNING</sub>
+#### CURRENTLY LEARNING
 <br>
 · Machine Learning
 <br>
@@ -29,11 +29,11 @@ Computer Science Student
 
 <br>
 
-<sub>WORKING ON</sub>
+#### WORKING ON
 <br>
-→ <a href="https://github.com/sharatchetia/nyaysetu">NyaySetu</a>
+→ <a href="https://github.com/sharatchetia/nyaysetu"><img src="https://img.shields.io/badge/NyaySetu-D97757?style=flat-square" alt="NyaySetu" height="20"></a>
 <br>
-→ <a href="https://github.com/sharatchetia/sign-language-translator">Real-Time Sign Language Translator</a>
+→ <a href="https://github.com/sharatchetia/sign-language-translator"><img src="https://img.shields.io/badge/Real--Time%20Sign%20Language%20Translator-D97757?style=flat-square" alt="Real-Time Sign Language Translator" height="20"></a>
 
 </td>
 <td valign="middle" align="center" width="50%">

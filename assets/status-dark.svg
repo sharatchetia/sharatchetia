@@ -1,4 +1,4 @@
-<svg width="300" height="88" viewBox="0 0 300 88" xmlns="http://www.w3.org/2000/svg">
+<svg width="640" height="260" viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
   <style>
     :root {
       --pill-fill: #17161C;
@@ -48,7 +48,33 @@
     .v6 { animation-delay: 15s; }
   </style>
 
-  <ellipse class="glow" cx="150" cy="44" rx="130" ry="26" fill="var(--accent)"/>
+  <defs>
+    <radialGradient id="blobA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD9C2" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFD9C2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D6E4FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#D6E4FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E7D9FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E7D9FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="38"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softBlur)">
+    <circle cx="150" cy="70" r="150" fill="url(#blobA)"/>
+    <circle cx="520" cy="55" r="160" fill="url(#blobB)"/>
+    <circle cx="340" cy="215" r="170" fill="url(#blobC)"/>
+  </g>
+
+
+  <g transform="translate(170,86)">
+<ellipse class="glow" cx="150" cy="44" rx="130" ry="26" fill="var(--accent)"/>
 
   <g class="float">
     <rect x="14" y="16" width="272" height="56" rx="28" fill="var(--pill-fill)" stroke="var(--pill-stroke)"/>
@@ -70,5 +96,6 @@
       <text class="value v5" x="76" y="54">Building software projects</text>
       <text class="value v6" x="76" y="54">Always learning</text>
     </g>
+  </g>
   </g>
 </svg>

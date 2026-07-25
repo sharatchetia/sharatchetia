@@ -1,6 +1,6 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width: 100%; border: none;">
 <tr>
-<td width="310" valign="top" style="min-width: 310px; width: 310px; border: none; padding-right: 15px;">
+<td width="310" valign="top" style="min-width: 310px; width: 310px; border: none; padding-right: 20px;">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">

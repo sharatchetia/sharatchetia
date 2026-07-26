@@ -50,20 +50,20 @@
 
   <defs>
     <linearGradient id="vWash" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#FFD9C2" stop-opacity="0.35"/>
-      <stop offset="45%"  stop-color="#D6E4FF" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#E7D9FF" stop-opacity="0.35"/>
+      <stop offset="0%"   stop-color="#FFD9C2" stop-opacity="0.55"/>
+      <stop offset="45%"  stop-color="#D6E4FF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#E7D9FF" stop-opacity="0.55"/>
     </linearGradient>
     <radialGradient id="blobA" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFD9C2" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#FFD9C2" stop-opacity="0.7"/>
       <stop offset="100%" stop-color="#FFD9C2" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="blobB" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#D6E4FF" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#D6E4FF" stop-opacity="0.7"/>
       <stop offset="100%" stop-color="#D6E4FF" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="blobC" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#E7D9FF" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#E7D9FF" stop-opacity="0.7"/>
       <stop offset="100%" stop-color="#E7D9FF" stop-opacity="0"/>
     </radialGradient>
     <filter id="softBlur" x="-60%" y="-60%" width="220%" height="220%">
@@ -71,6 +71,7 @@
     </filter>
   </defs>
 
+  <rect x="0" y="0" width="600" height="580" fill="#F7F4F0"/>
   <rect x="0" y="0" width="600" height="580" fill="url(#vWash)"/>
 
   <g filter="url(#softBlur)">

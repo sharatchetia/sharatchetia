@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img align="left" src="assets/status.svg" alt="Currently building" width="300">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg?v=11">
+  <img align="left" src="assets/status.svg?v=11" alt="Currently building" width="300">
 </picture>
 
 ### SHARAT CHANDRA CHETIA

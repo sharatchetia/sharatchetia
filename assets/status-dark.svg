@@ -64,7 +64,7 @@
     <circle cx="230" cy="470" r="210" fill="url(#blobC)"/>
   </g>
 
-  <g transform="translate(150,246)">
+  <g transform="translate(30,211) scale(1.8)">
     <ellipse class="glow" cx="150" cy="44" rx="130" ry="26" fill="var(--accent)"/>
 
     <g>
